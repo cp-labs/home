@@ -1012,7 +1012,8 @@ footer {
 .embla {
   --slide-spacing: 1.2rem;
   --slide-size: 60%;
-  --slide-height: 300px;
+  --slide-height: auto;
+  /* 300px; */
   padding: 1.6rem;
   max-width: 1000px;
   margin: 0 auto;
@@ -1133,7 +1134,7 @@ footer {
 @media (max-width: 960px) {
   .embla {
     --slide-size: 90%;
-    --slide-height: 300px;
+    --slide-height: auto;
   }
 
   .slide-content h3 {
