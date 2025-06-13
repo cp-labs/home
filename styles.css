@@ -9,6 +9,13 @@ html {
   overflow-x: hidden;
 }
 
+#parent-div,
+#html-div,
+#body-div {
+  position: relative;
+  overflow-x: hidden;
+}
+
 /* Header and Navigation Styles */
 header {
   display: flex;
@@ -233,8 +240,8 @@ nav a:hover {
   /* Ensure content stays above stripes */
 }
 
-html::before,
-html::after {
+#html-div::before,
+#html-div::after {
   content: '';
   position: absolute;
   background-color: #ebb919;
@@ -242,24 +249,24 @@ html::after {
   /* Place stripes behind content */
 }
 
-html::before {
+#html-div::before {
   width: 150%;
   height: 60px;
-  top: 390%;
+  top: 68%;
   right: -62%;
   transform: rotate(-60deg);
 }
 
-html::after {
+#html-div::after {
   width: 150%;
   height: 60px;
-  top: 390%;
+  top: 68%;
   left: -62%;
   transform: rotate(60deg);
 }
 
-body::before,
-body::after {
+#body-div::before,
+#body-div::after {
   content: '';
   position: absolute;
   background-color: #4361ee;
@@ -267,18 +274,18 @@ body::after {
   /* Place stripes behind content */
 }
 
-body::before {
+#body-div::before {
   width: 200%;
   height: 60px;
-  top: 28%;
+  top: 5%;
   right: -68%;
   transform: rotate(-45deg);
 }
 
-body::after {
+#body-div::after {
   width: 200%;
   height: 60px;
-  bottom: -56%;
+  bottom: 73%;
   left: -68%;
   transform: rotate(45deg);
   background-color: #ebb919;
@@ -660,19 +667,19 @@ body::after {
 
 @media (max-width: 1248px) {
 
-  html::before {
+  #html-div::before {
     width: 150%;
     height: 60px;
-    top: 416%;
-    right: -52%;
+    top: 70%;
+    right: -55%;
     transform: rotate(-66deg);
   }
 
-  html::after {
+  #html-div::after {
     width: 150%;
     height: 60px;
-    top: 416%;
-    left: -52%;
+    top: 70%;
+    left: -55%;
     transform: rotate(66deg);
   }
 
@@ -700,18 +707,18 @@ body::after {
     flex: 0 0 100%;
   }
 
-  html::before {
+  #html-div::before {
     width: 222%;
     height: 60px;
-    top: 428%;
+    top: 70%;
     right: -95%;
     transform: rotate(-74deg);
   }
 
-  html::after {
+  #html-div::after {
     width: 222%;
     height: 60px;
-    top: 428%;
+    top: 70%;
     left: -95%;
     transform: rotate(74deg);
   }
@@ -719,19 +726,19 @@ body::after {
 
 @media (max-width: 640px) {
 
-  html::before {
+  #html-div::before {
     width: 222%;
     height: 60px;
-    top: 440%;
-    right: -87%;
+    top: 70%;
+    right: -93%;
     transform: rotate(-78deg);
   }
 
-  html::after {
+  #html-div::after {
     width: 222%;
     height: 60px;
-    top: 440%;
-    left: -87%;
+    top: 70%;
+    left: -93%;
     transform: rotate(78deg);
   }
 
@@ -751,19 +758,19 @@ body::after {
 
 @media (max-width: 554px) {
 
-  html::before {
+  #html-div::before {
     width: 270%;
     height: 60px;
-    top: 438%;
-    right: -114%;
+    top: 70%;
+    right: -120%;
     transform: rotate(-80deg);
   }
 
-  html::after {
+  #html-div::after {
     width: 270%;
     height: 60px;
-    top: 438%;
-    left: -114%;
+    top: 70%;
+    left: -120%;
     transform: rotate(80deg);
   }
 
@@ -771,18 +778,18 @@ body::after {
 
 @media (max-width: 440px) {
 
-  html::before {
+  #html-div::before {
     width: 380%;
     height: 60px;
-    top: 438%;
+    top: 63%;
     right: -175%;
     transform: rotate(-82deg);
   }
 
-  html::after {
+  #html-div::after {
     width: 380%;
     height: 60px;
-    top: 438%;
+    top: 63%;
     left: -175%;
     transform: rotate(82deg);
   }
